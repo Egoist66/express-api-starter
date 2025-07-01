@@ -1,0 +1,45 @@
+{
+  "name": "express-api",
+  "version": "1.2.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "vercel-build": "echo hello",
+    "start:dist": "node dist/src/index.js",
+    "lint": "eslint --fix src test",
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Farid",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "17.0.0",
+    "express": "5.1.0",
+    "helmet": "8.1.0",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.3",
+    "@types/jest": "30.0.0",
+    "@types/morgan": "1.9.10",
+    "@types/node": "24.0.8",
+    "@types/supertest": "6.0.3",
+    "@typescript-eslint/eslint-plugin": "8.35.1",
+    "@typescript-eslint/parser": "8.35.1",
+    "eslint": "9.30.0",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-import-resolver-typescript": "4.4.4",
+    "eslint-plugin-import": "2.32.0",
+    "jest": "30.0.3",
+    "nodemon": "3.1.10",
+    "supertest": "7.1.1",
+    "ts-jest": "29.4.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  }
+}
