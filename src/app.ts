@@ -19,7 +19,7 @@ const app = express();
 app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors({
-  origin: 'http://localhost:3000, https://learn-lang-app.vercel.app'
+  origin: ['http://localhost:3000', 'https://learn-lang-app.vercel.app']
 }));
 app.use(express.json());
 
