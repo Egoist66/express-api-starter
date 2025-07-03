@@ -1,7 +1,7 @@
 {
   "name": "express-api",
   "version": "1.2.0",
-  "main": "src/index.ts",
+  "main": "src/app.ts",
   "scripts": {
     "start": "ts-node src/app.ts",
     "dev": "nodemon src/app.ts",
