@@ -1,0 +1,149 @@
+import { Router } from "express";
+import { ModuleResponse } from "./types/modules.types";
+
+const router = Router();
+
+router.get<{}, ModuleResponse>("/", (req, res) => {
+  res.json({
+    "#1111223434234": [
+      {
+        created_at: 1749332839794,
+        dic: [
+          {
+            id: "ce0ae022-31f0-4135-9393-8a7ab6a8116a",
+            key: "hello",
+            moduleName: "en-ru",
+            translate: "Привет",
+          },
+          {
+            id: "155f0a83-25da-459a-bd77-fd07d11994af",
+            key: "world",
+            moduleName: "en-ru",
+            translate: "мир",
+          },
+          {
+            id: "119dd8d4-9431-4095-84df-7256a72d89fd",
+            key: "sun",
+            moduleName: "en-ru",
+            translate: "солнце",
+          },
+          {
+            id: "ed039032-73ee-4fa2-bf41-607cee12fe4e",
+            key: "moon",
+            moduleName: "en-ru",
+            translate: "луна",
+          },
+          {
+            id: "eacb9110-5397-4975-9e6a-5b8063b1c216",
+            key: "sky",
+            moduleName: "en-ru",
+            translate: "небо",
+          },
+          {
+            id: "ffdfb74a-b0f5-471c-a7f9-a0a7580921ec",
+            key: "earth",
+            moduleName: "en-ru",
+            translate: "земля",
+          },
+          {
+            id: "fb355d77-30bb-4f4e-914c-d028715cfe12",
+            key: "sea",
+            moduleName: "en-ru",
+            translate: "море",
+          },
+          {
+            id: "48371d83-c74a-4c73-9b6e-a36bc39e279a",
+            key: "mountain",
+            moduleName: "en-ru",
+            translate: "гора",
+          },
+          {
+            id: "5f34d64c-33c2-421b-91e5-902c7a544715",
+            key: "tree",
+            moduleName: "en-ru",
+            translate: "дерево",
+          },
+          {
+            id: "f2eca38e-3a02-4c56-947c-bd54fa01b57c",
+            key: "house",
+            moduleName: "en-ru",
+            translate: "дом",
+          },
+        ],
+        description: "Изучение English",
+        id: "c17972eb-e602-472d-9b4d-053ef9054c9c",
+        moduleName: "en-ru",
+      },
+      {
+        created_at: 1749332839794,
+        dic: [
+          {
+            id: "eb48ea45-363b-46eb-9388-69271b04b7a1",
+            key: "Привет",
+            moduleName: "ru-en",
+            translate: "hello",
+          },
+          {
+            id: "84732018-a45f-4585-9414-d75c0389a4ce",
+            key: "мир",
+            moduleName: "ru-en",
+            translate: "world",
+          },
+          {
+            id: "485bf87d-48ab-4ae8-b45d-fa07b8db783e",
+            key: "солнце",
+            moduleName: "ru-en",
+            translate: "sun",
+          },
+          {
+            id: "8011b249-de37-476a-85d1-4f274ec325a8",
+            key: "луна",
+            moduleName: "ru-en",
+            translate: "moon",
+          },
+          {
+            id: "244da99f-fc68-4f62-9f24-3b9dde622bcc",
+            key: "небо",
+            moduleName: "ru-en",
+            translate: "sky",
+          },
+          {
+            id: "7da9d969-1204-48cf-872b-afc2e666774d",
+            key: "земля",
+            moduleName: "ru-en",
+            translate: "earth",
+          },
+          {
+            id: "1141b207-bd40-4ab6-bf95-005f0728dced",
+            key: "море",
+            moduleName: "ru-en",
+            translate: "sea",
+          },
+          {
+            id: "9b74c60c-725c-4ed1-9632-c3d9df78ecd9",
+            key: "гора",
+            moduleName: "ru-en",
+            translate: "mountain",
+          },
+          {
+            id: "829c3f3c-80b9-43f8-8ddc-79a1dff93534",
+            key: "дерево",
+            moduleName: "ru-en",
+            translate: "tree",
+          },
+          {
+            id: "38796df6-c865-4860-9647-92c4543b14ef",
+            key: "дом",
+            moduleName: "ru-en",
+            translate: "house",
+          },
+        ],
+        description: "Изучение Русского",
+        id: "fbf13322-8e7c-403e-8c83-cbcf53eb08cc",
+        moduleName: "ru-en",
+      },
+    ],
+  });
+});
+
+export default router;

@@ -1,10 +1,10 @@
 import {Router} from 'express';
 
-import emojis from './emojis/emojis';
+import emojis from './modules/modules.get';
 
 const router = Router();
 
 
-router.use('/emojis', emojis);
+router.use('/modules', emojis);
 
 export default router;
