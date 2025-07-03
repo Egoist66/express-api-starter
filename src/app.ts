@@ -2,13 +2,16 @@ import express from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
+import donenv from 'dotenv'
 
 
 import api from './api';
 import { errorHandler } from './middleware/errorHandler';
 import { notFound } from './middleware/notFound';
 
-require('dotenv').config();
+
+
+donenv.config()
 
 const port = process.env.PORT || 5000;
 const app = express();
