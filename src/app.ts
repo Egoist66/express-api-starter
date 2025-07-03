@@ -10,6 +10,7 @@ import { notFound } from './middleware/notFound';
 
 require('dotenv').config();
 
+const port = process.env.PORT || 5000;
 const app = express();
 
 
@@ -24,6 +25,10 @@ app.use('/api/v1', api);
 
 app.use(notFound);
 app.use(errorHandler);
+
+
+app.listen(port, () => console.log(`Listening: http://localhost:${port}`));
+
 
 
 export default app;

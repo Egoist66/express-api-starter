@@ -3,11 +3,11 @@
   "version": "1.2.0",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
     "build": "tsc",
     "vercel-build": "echo hello",
-    "start:dist": "node dist/src/index.js",
+    "start:dist": "node dist/src/app.js",
     "lint": "eslint --fix src test",
     "test": "jest",
     "typecheck": "tsc --noEmit"
