@@ -8,6 +8,7 @@ import donenv from 'dotenv'
 import api from './api';
 import { errorHandler } from './middleware/errorHandler';
 import { notFound } from './middleware/notFound';
+import { redirectToV1 } from './middleware/redirect-to-api';
 
 
 donenv.config()
@@ -19,9 +20,12 @@ const app = express();
 app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://learn-lang-app.vercel.app']
+  origin: ['http://localhost:5173', 'https://learn-lang-app.vercel.app']
 }));
+app.use(redirectToV1);
 app.use(express.json());
+
+
 
 
 app.use('/api/v1', api);
